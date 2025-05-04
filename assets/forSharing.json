@@ -1,0 +1,74 @@
+{
+  "farmerDetails": {
+    "farmerName": "sharvesh",
+    "surveyNumber": 1256,
+    "addressDetails": "aadress, tamil, pincode"
+  },
+  "overseasclause": true,
+  "paymentMethod": "Cash",
+  "sampleDetails": {
+    "dateDetails": "7/10/1996 5:08 PM"
+  },
+  "reportDetails": {
+    "dateDetails": "7/10/1996 5:08 PM",
+    "reportNumber": "ARN20210720245959",
+    "soilStandards": {
+      "c1": false,
+      "c2": false,
+      "ec0": 0,
+      "ec1": 0,
+      "ec2": 5.7,
+      "ph0": 2.1,
+      "ph1": 0,
+      "ph2": 0
+    }
+  }
+}
+
+{{reportDetails.soilStandards.cc0:optional(true)}}
+{{reportDetails.soilStandards.cc1:optional(true)}}
+{{reportDetails.soilStandards.cc2:optional(true)}}
+
+
+{{reportDetails.soilStandards.ec0:optional(true)}}
+{{reportDetails.soilStandards.ec1:optional(true)}}
+{{reportDetails.soilStandards.ec2:optional(true)}}
+
+
+{{reportDetails.soilStandards.ph0:optional(true)}}
+{{reportDetails.soilStandards.ph1:optional(true)}}
+{{reportDetails.soilStandards.ph2:optional(true)}}
+
+{{oc0:optional(true)}}
+{{oc1:optional(true)}}
+{{oc2:optional(true)}}
+{{nc0:optional(true)}}
+{{nc1:optional(true)}}
+{{nc2:optional(true)}}
+{{np0:optional(true)}}
+{{np1:optional(true)}}
+{{np2:optional(true)}}
+{{nk0:optional(true)}}
+{{nk1:optional(true)}}
+{{nk2:optional(true)}}
+
+https://documentcloud.adobe.com/dc-docgen-playground/index.html#/
+https://www.adobe.io/apis/documentcloud/dcsdk/docs.html?view=docgen
+
+https://medium.com/adobetech/if-this-then-that-conditional-logic-and-document-generation-c52d43eecec2
+
+var key = ["farmerName", "reportNumber", "surveyNumber", "addressDetails", "dateSample", "dateReport", "cc0", "cc1", "cc2", "ec0","ec1","ec2", "ph0","ph1","ph2","oc0","oc1","oc2","nc0","nc1","nc2","np0","np1","np2","nk0","nk1","nk2","fe0","fe1","fe2","mn0","mn1","mn2","zn0","zn1","zn2","cu0","cu1","cu2","opc","ops","sn0","sn1","sn2","sn3","sp0","sp1","sp2","sp3","sk0","sk1","sk2","sk3","sfe","smn","szn","scu"];
+var value = ["shanthosh", "ARN", "1256", "158", "2021", "2021", true, false, false, 0, 1.7, 0, 2.0, 0, 0, 0, 0, 1000.0,0,0,172.0,0,22.0,0,0,0,100.0,true, false, false, true, false, false, true, false, false, true, false, false, "demo", "demo", 0,0,0,100.0,0,0,158.2,0,500.0,0,0,0, "demo","demo","demo","demo" ];
+var fin = '';
+var j = 0;
+for(i=0; i<=56; i++) {
+  var condition = [value[i].length != 0, value[i].length != 0,value[i].length != 0, value[i].length != 0, value[i].length != 0, value[i].length != 0, value[i] == true, value[i] == true, value[i] == true, value[i] != 0, value[i] != 0,value[i] != 0, value[i] != 0, value[i] != 0, value[i] != 0, value[i] != 0, value[i] != 0,value[i] != 0, value[i] != 0, value[i] != 0,value[i] != 0, value[i] != 0, value[i] != 0,value[i] != 0, value[i] != 0, value[i] != 0,value[i] != 0, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i] == true, value[i].length != 0, value[i].length != 0, value[i] != 0, value[i] != 0, value[i] != 0, value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0,value[i] != 0, value[i].length != 0, value[i].length != 0,value[i].length != 0, value[i].length != 0];
+  //console.log(key[i] + ' ' + condition[i] + ' ' +value[i]);
+  if(condition[i]){
+  var check = value[i]==true ? "✔" : value[i];
+  fin += `"${key[i]}": "${check}",`;
+  //console.log(key[i] + ' ' + condition[i] + ' ' +value[i]);
+  }
+}
+
+console.log(fin);

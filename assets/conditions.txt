@@ -1,0 +1,41 @@
+DateFormat.yMd().add_jm() 7/10/1996 5:08 PM
+
+{% conditional-section expr(reportDetails.soilStandards.c0 = "true")%} ✓ {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.c1 = "true")%} ✓ {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.c2 = "true")%} ✓ {% end-section %}
+
+{% conditional-section expr(reportDetails.soilStandards.ec0 != "0")%} {{reportDetails.soilStandards.ec0}} {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.ec1 != "0")%} {{reportDetails.soilStandards.ec1}} {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.ec2 != "0")%} {{reportDetails.soilStandards.ec2}} {% end-section %}
+
+{% conditional-section expr(reportDetails.soilStandards.ph0 != "0")%} {{reportDetails.soilStandards.ph0}} {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.ph1 != "0")%} {{reportDetails.soilStandards.ph1}} {% end-section %}
+{% conditional-section expr(reportDetails.soilStandards.ph2 != "0")%} {{reportDetails.soilStandards.ph2}} {% end-section %}
+
+{% conditional-section expr(reportDetails.soilStandards.c0 == "true")%} ✓ {% end-section %}
+
+{
+  "farmerDetails": {
+    "farmerName": "sharvesh",
+    "surveyNumber": "1256",
+    "addressDetails": "aadress, tamil, pincode"
+  },
+  "sampleDetails": {
+    "dateDetails": "7/10/1996 5:08 PM"
+  },
+  "reportDetails": {
+	"dateDetails": "7/10/1996 5:08 PM",
+      	"reportNumber" : "ARN20210720245959",
+    "soilStandards": {
+      "c0": "true",
+      "c1": "false",
+      "c2": "false",
+      "ec0": "0",
+      "ec1": "0",
+      "ec2": "5.7",
+      "ph0": "2.1",
+      "ph1": "0",
+      "ph2": "0"
+    }
+  }
+}

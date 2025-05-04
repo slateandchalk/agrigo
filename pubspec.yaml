@@ -1,0 +1,77 @@
+name: agrigo_kia
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.2.1
+  json_serializable: ^6.9.0
+  intl: ^0.20.2
+  dropdown_search: ^6.0.2
+  dio: ^5.8.0+1
+  file_selector_platform_interface: ^2.0.0
+  file_selector_windows: ^0.9.3+4
+  http_parser: ^4.1.2
+  flutter_svg: ^2.1.0
+  crop_your_image: ^2.0.0
+  connectivity_plus: ^6.1.4
+  menubar:
+    git:
+      url: https://github.com/google/flutter-desktop-embedding.git
+      path: plugins/menubar
+  path_provider: ^2.0.2
+  lottie: ^3.2.0
+  shimmer: ^3.0.0
+  url_launcher: ^6.0.9
+  pausable_timer: ^3.1.0+3
+  multiple_stream_builder: ^3.0.2
+  animated_text_kit: ^4.2.1
+  bitsdojo_window: ^0.1.1+1
+  shared_preferences: ^2.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+dependency_overrides:
+  collection: ^1.19.0
+
+flutter:
+
+  uses-material-design: true
+  fonts:
+    - family: GoogleSans
+      fonts:
+        - asset: fonts/GoogleSans-Regular.ttf
+        - asset: fonts/GoogleSans-Medium.ttf
+          weight: 500
+        - asset: fonts/GoogleSans-Bold.ttf
+          weight: 700
+    - family: BalooThambi2
+      fonts:
+        - asset: fonts/BalooThambi2-Regular.ttf
+  assets:
+    - assets/sd.jpg
+    - assets/kia.pdf
+    - assets/sd.svg
+    - assets/avatar.jpg
+    - assets/flags/
+    - assets/loading.gif
+    - assets/sampleAnim.json
+    - assets/reportAnim.json
+    - assets/samplePreAnim.json
+    - assets/ta.png
+    - assets/en.png
+    - assets/outlook-logo.png
+    - assets/data.json
+    - assets/images/
+    - assets/dataX.json
+    - assets/dataY.json
